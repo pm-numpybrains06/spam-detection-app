@@ -1,3 +1,8 @@
+import nltk
+from nltk.stem import PorterStemmer
+
+nltk.download('punkt')
+stemmer = PorterStemmer()
 
 import streamlit as st
 import pickle
