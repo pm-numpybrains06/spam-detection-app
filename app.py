@@ -37,7 +37,7 @@ st.markdown("""
         border-radius: 10px;
     }
     .stTextArea textarea {
-        background-color: #fff !important;
+        background-color: #eb86c7 !important;
         font-size: 16px !important;
     }
     </style>
