@@ -32,7 +32,7 @@ st.set_page_config(page_title="Spam Detector", page_icon="📩", layout="centere
 st.markdown("""
     <style>
     .main {
-        background-color: #f7f7f9;
+        background-color: #eb86c7;
         padding: 20px;
         border-radius: 10px;
     }
