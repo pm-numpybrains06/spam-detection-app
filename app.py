@@ -9,6 +9,15 @@ import streamlit as st
 import pickle
 import string
 from nltk.stem import PorterStemmer
+from streamlit_lottie import st_lottie
+import json
+
+def load_lottie():
+    with open("spam_animation.json", "r") as f:
+        return json.load(f)
+
+st_lottie(load_lottie(), height=250)
+
 
 # 🌐 Hardcoded stopwords (safe for deployment)
 stop_words = {'some', 'which', 'the', 'shouldn', 'her', 'up', 'm', 'won', "won't", 'been', 'hadn', 'himself', 'has', "aren't",
