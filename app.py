@@ -15,7 +15,7 @@ from streamlit_lottie import st_lottie
 
 
 def load_lottie():
-    with open("spam_animation.json", "r") as f:
+    with open("spam_animation1.json", "r") as f:
         return json.load(f)
 
 st_lottie(load_lottie(), height=250)
