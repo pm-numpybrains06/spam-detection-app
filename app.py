@@ -70,8 +70,28 @@ def clean_text(text):
 # 🖼️ Main UI
 st.markdown("<h1 style='text-align: center; color: #6C63FF;'>📩 Spam Message Classifier</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Enter your message below to check if it's spam or not.</p>", unsafe_allow_html=True)
+st.markdown("📌 Try example messages:")
 
-input_text = st.text_area("✍️ Type your message here:", height=150)
+examples = {
+    "Spam": "Congratulations! You’ve won a $1000 gift card. Click here to claim.",
+    "Ham": "Hey, are we still on for dinner tonight?"
+}
+
+# Use a session state variable to persist button choice
+if "example_text" not in st.session_state:
+    st.session_state.example_text = ""
+
+col1, col2 = st.columns(2)
+with col1:
+    if st.button("🎁 Spam Example"):
+        st.session_state.example_text = examples["Spam"]
+with col2:
+    if st.button("💬 Ham Example"):
+        st.session_state.example_text = examples["Ham"]
+
+# Show the selected example or allow user input
+input_text = st.text_area("✍️ Type your message here:", value=st.session_state.example_text, height=150)
+
 
 if st.button("🔍 Analyze"):
     if input_text.strip() == "":
