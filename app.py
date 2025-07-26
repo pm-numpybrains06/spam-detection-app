@@ -8,9 +8,11 @@ stemmer = PorterStemmer()
 import streamlit as st
 import pickle
 import string
+import json
+
 from nltk.stem import PorterStemmer
 from streamlit_lottie import st_lottie
-import json
+
 
 def load_lottie():
     with open("spam_animation.json", "r") as f:
