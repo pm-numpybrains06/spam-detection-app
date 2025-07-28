@@ -54,10 +54,16 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown(
-    "<h1 style='font: MotorBlock; color: #3366cc;'>SpamShield - Smart Spam Detector</h1>",
-    unsafe_allow_html=True
-)
+st.markdown("""
+    <link href="https://www.dafont.com/motorblock.font?text=SpamShield" rel="stylesheet">
+    <style>
+        html, body, [class*="css"]  {
+            font-family: 'MotorBlock';
+        }
+    </style>
+    <h1 style='color:#3366cc;'>SpamShield</h1>
+""", unsafe_allow_html=True)
+
 
 # 🧠 Load model and vectorizer
 model = pickle.load(open("spam_model.pkl", "rb"))
