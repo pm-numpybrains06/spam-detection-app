@@ -55,12 +55,15 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-    <link href="https://fonts.google.com/specimen/Bebas+Neue" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
-        html, body, [class*="css"] 
+        html, body, [class*="css"] {
+            font-family: 'Bebas Neue', sans-serif;
+        }
     </style>
-    <h1 style='color:#3366cc;'>SpamShield</h1>
+    <h1 style='color:#3366cc;'>SpamShield - Smart Spam Detector</h1>
 """, unsafe_allow_html=True)
+
 
 
 # 🧠 Load model and vectorizer
