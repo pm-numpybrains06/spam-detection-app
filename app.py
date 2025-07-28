@@ -54,6 +54,11 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+st.markdown(
+    "<h1 style='font-family: Montserrat; color: #3366cc;'>SpamShield - Smart Spam Detector</h1>",
+    unsafe_allow_html=True
+)
+
 # 🧠 Load model and vectorizer
 model = pickle.load(open("spam_model.pkl", "rb"))
 vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
@@ -68,7 +73,6 @@ def clean_text(text):
     return " ".join(words)
 
 # 🖼️ Main UI
-st.markdown("<h1 style='text-align: center; color: #6C63FF;'>📩 Spam Message Classifier</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Enter your message below to check if it's spam or not.</p>", unsafe_allow_html=True)
 st.markdown("📌 Try example messages:")
 
