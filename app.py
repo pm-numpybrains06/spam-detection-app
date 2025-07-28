@@ -55,7 +55,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown(
-    "<h1 style='font-family: MotorBlock; color: #3366cc;'>SpamShield - Smart Spam Detector</h1>",
+    "<h1 style='font: MotorBlock; color: #3366cc;'>SpamShield - Smart Spam Detector</h1>",
     unsafe_allow_html=True
 )
 
