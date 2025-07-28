@@ -55,11 +55,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-    <link href="https://www.dafont.com/motorblock.font?text=SpamShield" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Bebas+Neue" rel="stylesheet">
     <style>
-        html, body, [class*="css"]  {
-            font-family: 'MotorBlock';
-        }
+        html, body, [class*="css"] 
     </style>
     <h1 style='color:#3366cc;'>SpamShield</h1>
 """, unsafe_allow_html=True)
